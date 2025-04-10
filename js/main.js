@@ -159,3 +159,47 @@ window.addEventListener("load", function(event){
 
 
 }) //window.addEvenListened load
+
+//Agregar la funcionalidad del botón Limpiar Todo
+//Resumen
+//Tabla
+//campos
+//alerta
+// localStorage
+
+btnClear.addEventListener("click", function(event){
+    event.preventDefault();
+    alert("Borrar todo");
+    //borrar campos
+    txtName.value = "";
+    txtNumber.value = "";        
+    txtName.focus();
+    contadorProductos.innerText = 0;
+    productosTotal.innerText = 0;
+    precioTotal.innerText ="$ 0";
+    //localStorage.clear();
+
+    //borrar alertas
+    alertValidaciones.innerHTML="";
+    alertValidaciones,style.display="none";
+    txtName.style.border="";
+    txtNumber.style.border="";
+
+
+    //borrar tabla
+    cuerpoTabla.innerHTML = "";
+
+
+
+
+    /**
+     costoTotal = `$ `;
+     totalEnProductos = 0;
+     cont= 0;
+     precioTotal.innerText ="$ "; 
+     productosTotal.innerText = totalEnProductos;
+     contadorProductos.innerText = cont;
+     
+     */
+
+});
